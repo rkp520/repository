@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+*{
+padding:0;
+margin:0;
+}
+.mydiv{
+margin-top:20px;
+text-align:center;
+width:400px;
+height:200px;
+background-image:linear-gradient(white,rgb(150,150,150));
+border-radius:10px;
+
+}
+    div{
+    padding-top:5px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="mydiv">
+    <h2>Entry Page</h2>
+<form action="" method = "POST">
+<div>
+    <lable>Name : </lable>
+</div>
+<div>
+    </lable></lable><input type="text" name="empname">
+</div>
+<div>
+<div>
+    <lable>Location : </lable>
+</div>
+<div>
+    </lable></lable><input type="text" name="emplocation">
+</div>
+    <div>
+       <input type='submit' value='SUBMIT'>
+
+</div>
+    <p>
+    {%if error%}
+    {{error}}
+    {%endif%}
+    </p>
+</div>
+</form>
+</div>
+</body>
+</html>
